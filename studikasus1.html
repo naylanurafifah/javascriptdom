@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <script>
+        let htmlCollection = document.getElementsByTagName("li");
+        let nodelist = document.querySelectorAll("li");
+        
+        let ulcontainer = document.querySelector("ul")
+        let liNew = document.createElement("li")
+        liNew.innerHTML= "item baru";
+
+        ulcontainer.appendChild(liNew);
+        console.log(htmlCollection);
+        console.log(nodelist);
+    </script>
+</body>
+</html>
